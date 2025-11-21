@@ -1,0 +1,62 @@
+Experiment 1 
+linear search iteration
+***********************
+program:
+***********************
+#include<stdio.h>
+int main()
+{
+    int size, elementToFind, i;
+    printf("Enter the size of Data Set for Linear Search:");
+    scanf("%d",&size);
+
+    int searchSpace[size];
+    for(i=0; i<=size-1; i++)
+    {
+        printf("Enter the %d out of %d element in data set: ",i+1, size);
+        scanf("%d",&searchSpace[i]);
+    }
+
+    //printf("Given Dataset for Linear Search is: ");
+    for(int i=0; i<size; i++)
+    {
+        printf("%d - ",searchSpace[i]);
+    }
+
+    printf("\nEnter the element to find in the dataset: ");
+    scanf("%d",&elementToFind);
+    i =0;
+    while(i<size)
+    {
+        if(searchSpace[i] == elementToFind)
+        {
+            printf("Required element %d is found in the dataset at position %d or index %d",elementToFind, i+1, i);
+            return 0;
+        }
+        i++;
+    }
+
+    printf("Required element %d is NOT found in the dataset!!!",elementToFind);
+}
+********************
+output1:
+Enter the size of Data Set for Linear Search:5
+Enter the 1 out of 5 element in data set: 1
+Enter the 2 out of 5 element in data set: 2
+Enter the 3 out of 5 element in data set: 3
+Enter the 4 out of 5 element in data set: 4
+Enter the 5 out of 5 element in data set: 5
+1 - 2 - 3 - 4 - 5 - 
+Enter the element to find in the dataset: 6
+Required element 6 is NOT found in the dataset!!!
+output2:
+Enter the size of Data Set for Linear Search:5
+Enter the 1 out of 5 element in data set: 1
+Enter the 2 out of 5 element in data set: 2
+Enter the 3 out of 5 element in data set: 3
+Enter the 4 out of 5 element in data set: 4
+Enter the 5 out of 5 element in data set: 5
+1 - 2 - 3 - 4 - 5 - 
+Enter the element to find in the dataset: 3
+Required element 3 is found in the dataset at position 3 or index 2
+
