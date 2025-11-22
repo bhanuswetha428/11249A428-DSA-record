@@ -1,4 +1,4 @@
-TREE TRAVERSAL
+TREE TRAVERSAL DFS
 ****************
 program:
 ****************
