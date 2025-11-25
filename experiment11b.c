@@ -24,16 +24,6 @@ struct Node *createNode(int value)
     newNode->left = newNode->right = NULL;
     return newNode;
 }
-********************
-  OUTPUT:
-Enter number of elements: 4
-Enter 4 values:
-1
-3
-5
-6
-
-Level Order Traversal: 1 3 5 6 
 
 // Insert the new node and returns root node of the updated tree
 struct Node *insert(struct Node *root, int value)
@@ -113,3 +103,14 @@ int main()
 
     return 0;
 }
+********************
+  OUTPUT:
+Enter number of elements: 4
+Enter 4 values:
+1
+3
+5
+6
+
+Level Order Traversal: 1 3 5 6 
+
